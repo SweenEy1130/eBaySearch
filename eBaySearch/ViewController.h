@@ -8,8 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate,NSURLConnectionDelegate>{
+    NSMutableData *_responseData;
+}
+- (IBAction)KeywordDismiss:(id)sender;
+- (IBAction)PriceFromDismiss:(id)sender;
+- (IBAction)PriceToDismiss:(id)sender;
 
+@property (strong, nonatomic) IBOutlet UIView *ContentView;
+@property (weak, nonatomic) IBOutlet UITextField *Keyword;
+@property (weak, nonatomic) IBOutlet UITextField *PriceFrom;
+@property (weak, nonatomic) IBOutlet UITextField *PriceTo;
+@property (strong, nonatomic) IBOutlet UITextField *Sort;
+@property (weak, nonatomic) IBOutlet UIButton *Search;
+@property (weak, nonatomic) IBOutlet UILabel *Errors;
+@property (weak, nonatomic) IBOutlet UIButton *Clear;
 
 @end
 

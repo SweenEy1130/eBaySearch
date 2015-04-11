@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B4616A91AD8543A009157EC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4616A81AD8543A009157EC /* DetailViewController.m */; };
+		1B4616AB1AD87E56009157EC /* itemTopRated.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B4616AA1AD87E56009157EC /* itemTopRated.jpg */; };
+		1B4616B31AD8C466009157EC /* yes.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B4616B11AD8C466009157EC /* yes.png */; };
+		1B4616B41AD8C466009157EC /* no.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B4616B21AD8C466009157EC /* no.png */; };
+		1B4616BE1AD8ED02009157EC /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4616BB1AD8ED02009157EC /* FBSDKCoreKit.framework */; };
+		1B4616BF1AD8ED02009157EC /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4616BC1AD8ED02009157EC /* FBSDKLoginKit.framework */; };
+		1B4616C01AD8ED02009157EC /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B4616BD1AD8ED02009157EC /* FBSDKShareKit.framework */; };
+		1B84A5DA1AD79B8200847DC8 /* ResultTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B84A5D91AD79B8200847DC8 /* ResultTableController.m */; };
 		1B9ABCD01AD767030001EE7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9ABCCF1AD767030001EE7F /* main.m */; };
 		1B9ABCD31AD767030001EE7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9ABCD21AD767030001EE7F /* AppDelegate.m */; };
 		1B9ABCD61AD767030001EE7F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9ABCD51AD767030001EE7F /* ViewController.m */; };
 		1B9ABCD91AD767030001EE7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B9ABCD71AD767030001EE7F /* Main.storyboard */; };
 		1B9ABCDB1AD767030001EE7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B9ABCDA1AD767030001EE7F /* Images.xcassets */; };
-		1B9ABCDE1AD767030001EE7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B9ABCDC1AD767030001EE7F /* LaunchScreen.xib */; };
 		1B9ABCEA1AD767030001EE7F /* eBaySearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9ABCE91AD767030001EE7F /* eBaySearchTests.m */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +34,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B4616A71AD8543A009157EC /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		1B4616A81AD8543A009157EC /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		1B4616AA1AD87E56009157EC /* itemTopRated.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = itemTopRated.jpg; sourceTree = "<group>"; };
+		1B4616B11AD8C466009157EC /* yes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yes.png; sourceTree = "<group>"; };
+		1B4616B21AD8C466009157EC /* no.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = no.png; sourceTree = "<group>"; };
+		1B4616BB1AD8ED02009157EC /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		1B4616BC1AD8ED02009157EC /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		1B4616BD1AD8ED02009157EC /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		1B84A5D81AD79B8200847DC8 /* ResultTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultTableController.h; sourceTree = "<group>"; };
+		1B84A5D91AD79B8200847DC8 /* ResultTableController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultTableController.m; sourceTree = "<group>"; };
 		1B9ABCCA1AD767030001EE7F /* eBaySearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eBaySearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B9ABCCE1AD767030001EE7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B9ABCCF1AD767030001EE7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -36,7 +53,6 @@
 		1B9ABCD51AD767030001EE7F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1B9ABCD81AD767030001EE7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B9ABCDA1AD767030001EE7F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1B9ABCDD1AD767030001EE7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1B9ABCE31AD767030001EE7F /* eBaySearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eBaySearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B9ABCE81AD767030001EE7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B9ABCE91AD767030001EE7F /* eBaySearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eBaySearchTests.m; sourceTree = "<group>"; };
@@ -47,6 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B4616BF1AD8ED02009157EC /* FBSDKLoginKit.framework in Frameworks */,
+				1B4616BE1AD8ED02009157EC /* FBSDKCoreKit.framework in Frameworks */,
+				1B4616C01AD8ED02009157EC /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +85,9 @@
 				1B9ABCCC1AD767030001EE7F /* eBaySearch */,
 				1B9ABCE61AD767030001EE7F /* eBaySearchTests */,
 				1B9ABCCB1AD767030001EE7F /* Products */,
+				1B4616BB1AD8ED02009157EC /* FBSDKCoreKit.framework */,
+				1B4616BC1AD8ED02009157EC /* FBSDKLoginKit.framework */,
+				1B4616BD1AD8ED02009157EC /* FBSDKShareKit.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,9 +107,15 @@
 				1B9ABCD21AD767030001EE7F /* AppDelegate.m */,
 				1B9ABCD41AD767030001EE7F /* ViewController.h */,
 				1B9ABCD51AD767030001EE7F /* ViewController.m */,
+				1B84A5D81AD79B8200847DC8 /* ResultTableController.h */,
+				1B84A5D91AD79B8200847DC8 /* ResultTableController.m */,
+				1B4616A71AD8543A009157EC /* DetailViewController.h */,
+				1B4616A81AD8543A009157EC /* DetailViewController.m */,
 				1B9ABCD71AD767030001EE7F /* Main.storyboard */,
+				1B4616AA1AD87E56009157EC /* itemTopRated.jpg */,
+				1B4616B11AD8C466009157EC /* yes.png */,
+				1B4616B21AD8C466009157EC /* no.png */,
 				1B9ABCDA1AD767030001EE7F /* Images.xcassets */,
-				1B9ABCDC1AD767030001EE7F /* LaunchScreen.xib */,
 				1B9ABCCD1AD767030001EE7F /* Supporting Files */,
 			);
 			path = eBaySearch;
@@ -168,6 +196,7 @@
 				TargetAttributes = {
 					1B9ABCC91AD767030001EE7F = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = KS9FZQ3KTT;
 					};
 					1B9ABCE21AD767030001EE7F = {
 						CreatedOnToolsVersion = 6.2;
@@ -200,7 +229,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B9ABCD91AD767030001EE7F /* Main.storyboard in Resources */,
-				1B9ABCDE1AD767030001EE7F /* LaunchScreen.xib in Resources */,
+				1B4616B41AD8C466009157EC /* no.png in Resources */,
+				1B4616AB1AD87E56009157EC /* itemTopRated.jpg in Resources */,
+				1B4616B31AD8C466009157EC /* yes.png in Resources */,
 				1B9ABCDB1AD767030001EE7F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +250,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B4616A91AD8543A009157EC /* DetailViewController.m in Sources */,
 				1B9ABCD61AD767030001EE7F /* ViewController.m in Sources */,
+				1B84A5DA1AD79B8200847DC8 /* ResultTableController.m in Sources */,
 				1B9ABCD31AD767030001EE7F /* AppDelegate.m in Sources */,
 				1B9ABCD01AD767030001EE7F /* main.m in Sources */,
 			);
@@ -250,14 +283,6 @@
 				1B9ABCD81AD767030001EE7F /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1B9ABCDC1AD767030001EE7F /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1B9ABCDD1AD767030001EE7F /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -345,9 +370,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/zhengli/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = eBaySearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -355,9 +387,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/zhengli/Documents/FacebookSDK,
+				);
 				INFOPLIST_FILE = eBaySearch/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -414,6 +453,7 @@
 				1B9ABCEF1AD767030001EE7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B9ABCF01AD767030001EE7F /* Build configuration list for PBXNativeTarget "eBaySearchTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +462,7 @@
 				1B9ABCF21AD767030001EE7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
