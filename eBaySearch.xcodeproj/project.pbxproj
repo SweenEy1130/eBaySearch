@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B2E8C591ADF73BC0089A599 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B2E8C581ADF73BC0089A599 /* Bolts.framework */; };
 		1B4616A91AD8543A009157EC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B4616A81AD8543A009157EC /* DetailViewController.m */; };
 		1B4616AB1AD87E56009157EC /* itemTopRated.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1B4616AA1AD87E56009157EC /* itemTopRated.jpg */; };
 		1B4616B31AD8C466009157EC /* yes.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B4616B11AD8C466009157EC /* yes.png */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B2E8C581ADF73BC0089A599 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = ../FacebookSDK/Bolts.framework; sourceTree = "<group>"; };
 		1B4616A71AD8543A009157EC /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		1B4616A81AD8543A009157EC /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		1B4616AA1AD87E56009157EC /* itemTopRated.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = itemTopRated.jpg; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				1B4616BF1AD8ED02009157EC /* FBSDKLoginKit.framework in Frameworks */,
 				1B4616BE1AD8ED02009157EC /* FBSDKCoreKit.framework in Frameworks */,
 				1B4616C01AD8ED02009157EC /* FBSDKShareKit.framework in Frameworks */,
+				1B2E8C591ADF73BC0089A599 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 				1B9ABCCC1AD767030001EE7F /* eBaySearch */,
 				1B9ABCE61AD767030001EE7F /* eBaySearchTests */,
 				1B9ABCCB1AD767030001EE7F /* Products */,
+				1B2E8C581ADF73BC0089A599 /* Bolts.framework */,
 				1B4616BB1AD8ED02009157EC /* FBSDKCoreKit.framework */,
 				1B4616BC1AD8ED02009157EC /* FBSDKLoginKit.framework */,
 				1B4616BD1AD8ED02009157EC /* FBSDKShareKit.framework */,

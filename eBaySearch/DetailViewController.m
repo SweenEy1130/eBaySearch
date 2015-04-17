@@ -78,7 +78,7 @@
  
 -(void)shareAction:(id)sender
 {
-    NSLog(@"share action");
+    // NSLog(@"share action");
     
     FBSDKShareLinkContent *content = [[FBSDKShareLinkContent alloc] init];
     content.contentURL = [NSURL URLWithString:self.itemURL];
@@ -86,6 +86,12 @@
     content.imageURL = [NSURL URLWithString:self.itemIconURL];
     content.contentDescription = [NSString stringWithFormat:@"%@, %@", self.uprice, self.ulocation];
     [FBSDKShareDialog showFromViewController:self withContent:content delegate:nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Facebook Sharing"
+                                                    message:@"Successful sharing the item to Facebook."
+                                                   delegate:self
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
 }
 
 #pragma mark - Collection

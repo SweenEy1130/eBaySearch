@@ -84,7 +84,6 @@
 - (void) pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
     _Sort.text = [sortByData objectAtIndex:row];
-    
 }
 
 // Search button
@@ -143,6 +142,8 @@
     [_PriceFrom setText: @""];
     [_PriceTo setText: @""];
     [_Errors setText: @""];
+    [_Sort setText: [sortByData objectAtIndex:0]];
+    [sortPicker selectRow:0 inComponent:0 animated:YES];
 }
 
 #pragma mark NSURLConnection Delegate Methods
@@ -166,6 +167,7 @@
         retObj = (NSDictionary *)[NSJSONSerialization JSONObjectWithData:_responseData options:0 error:&error];
     }
     
+    httpLock = FALSE;
     if (!retObj) return;
     if (![[retObj valueForKey:@"ack"] isEqualToString:@"Success"] ||
         [[retObj valueForKey:@"resultCount"] integerValue] <= 0){
@@ -180,8 +182,6 @@
     [newView.tableView reloadData];
     
     [self.navigationController pushViewController:newView animated:YES];
-    
-    httpLock = FALSE;
 }
 
 - (NSCachedURLResponse *)connection:(NSURLConnection *)connection
