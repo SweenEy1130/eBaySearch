@@ -7,10 +7,11 @@
 //
 
 #import "DetailViewController.h"
+
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKShareKit/FBSDKShareKit.h>
 
-@interface DetailViewController (){
+@interface DetailViewController ()<FBSDKSharingDelegate>{
     NSArray * details;
     NSArray * infos;
     NSArray *basic;
@@ -49,9 +50,6 @@
             }
         }
     });
-//    NSURL *url = [NSURL URLWithString:uimageurl];
-//    NSData *data = [[NSData alloc] initWithContentsOfURL:url];
-//    _ItemImage.image = [UIImage imageWithData:data];
     
     if ([utoprated isEqualToString:@"true"]){
         _ItemTopRated.image = [UIImage imageNamed:@"itemTopRated.jpg"];
@@ -78,20 +76,12 @@
  
 -(void)shareAction:(id)sender
 {
-    // NSLog(@"share action");
-    
     FBSDKShareLinkContent *content = [[FBSDKShareLinkContent alloc] init];
     content.contentURL = [NSURL URLWithString:self.itemURL];
     content.contentTitle = self.utitle;
     content.imageURL = [NSURL URLWithString:self.itemIconURL];
     content.contentDescription = [NSString stringWithFormat:@"%@, %@", self.uprice, self.ulocation];
-    [FBSDKShareDialog showFromViewController:self withContent:content delegate:nil];
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Facebook Sharing"
-                                                    message:@"Successful sharing the item to Facebook."
-                                                   delegate:self
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [alert show];
+    [FBSDKShareDialog showFromViewController:self withContent:content delegate:self];
 }
 
 #pragma mark - Collection
@@ -148,4 +138,32 @@
         }
 }
 
+#pragma mark - FBSDKSharingDelegate
+- (void) sharer:(id<FBSDKSharing>)sharer didCompleteWithResults: (NSDictionary *)results{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil
+                                            message:[NSString stringWithFormat:@"Posted Story, ID: %@", [results objectForKey:@"postId"]]
+                                            delegate:nil cancelButtonTitle:nil otherButtonTitles: nil];
+    [alertView show];
+    
+    int duration = 1; // duration in seconds
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, duration * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        [alertView dismissWithClickedButtonIndex:0 animated:YES];
+    });
+}
+- (void) sharerDidCancel:(id<FBSDKSharing>)sharer{
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:@"Post Cancelled!" delegate:nil cancelButtonTitle:nil otherButtonTitles: nil];
+    [alertView show];
+    
+    int duration = 1; // duration in seconds
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, duration * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        [alertView dismissWithClickedButtonIndex:0 animated:YES];
+    });
+}
+- (void) sharer:(id<FBSDKSharing>)sharer didFailWithError:(NSError *)error{
+    NSLog(@"sharing error:%@", error);
+    NSString *message = error.userInfo[FBSDKErrorLocalizedDescriptionKey] ?:
+    @"There was a problem sharing, please try again later.";
+    NSString *title = error.userInfo[FBSDKErrorLocalizedTitleKey] ?: @"Oops!";
+    
+    [[[UIAlertView alloc] initWithTitle:title message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];}
 @end

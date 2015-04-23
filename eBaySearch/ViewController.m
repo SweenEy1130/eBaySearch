@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
     // Initialize Data
     sortByData = @[@"Best Match", @"Price: highest first", @"Price + Shipping: highest first", @"Price + Shipping: lowest first"];
     sortByValue = @[@"BestMatch", @"CurrentPriceHighest", @"PricePlusShippingHighest", @"PricePlusShippingLowest"];

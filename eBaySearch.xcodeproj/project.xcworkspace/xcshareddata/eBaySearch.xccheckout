@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>676AF7EC-6D39-4C40-811A-24A020783852</string>
+	<key>IDESourceControlProjectName</key>
+	<string>eBaySearch</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ADAFFE0D5C01F66EBCD15BAD2DD30FEFD3624315</key>
+		<string>https://github.com/SweenEy1130/eBaySearch.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>eBaySearch.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ADAFFE0D5C01F66EBCD15BAD2DD30FEFD3624315</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/SweenEy1130/eBaySearch.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ADAFFE0D5C01F66EBCD15BAD2DD30FEFD3624315</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ADAFFE0D5C01F66EBCD15BAD2DD30FEFD3624315</string>
+			<key>IDESourceControlWCCName</key>
+			<string>eBaySearch</string>
+		</dict>
+	</array>
+</dict>
+</plist>
